@@ -1,3 +1,17 @@
+### add fancybox image
+`<a class="fancybox" rel="gallery1" href="https://<image>" title="">`
+
+`![](https://<image>)`
+
+`</a>`
+
+### display images in rows
+wrap block of images in
+
+`<div class="cols <two, three, four>"> <images> </div>`
+
+### setup comments
+
 To set up Moot comments, do the following:
 
 1. Go to: https://moot.it/ and create a new forum (near the bottom) and username for yourself.
