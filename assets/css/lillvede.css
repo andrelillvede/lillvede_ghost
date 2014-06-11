@@ -1,0 +1,18 @@
+.cols {
+	font-size: 0;
+}
+
+.cols img {
+	display: inline-block;
+}
+
+.two img {
+	width: 50%;
+}
+.three img {
+	width: 33.3333333%;
+}
+.four img {
+	width: 25%;
+}
+
