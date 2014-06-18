@@ -61,23 +61,28 @@
                     
                 </section>
                 
-                <!-- 
-                    Below is the section to edit when setting up comments.
-                    Change href="https://moot.it/i/detox/posts:{{title}}" 
-                        to href="https://moot.it/i/your_forumname/your_discusionsection:{{title}}"
-                -->
+
                 <section id="comments">
-                    <a class="moot"
-                        title="{{title}}"
-                        href="https://moot.it/i/detox/posts:{{title}}">
-                        Comments for this blog entry
-                    </a>
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        var disqus_shortname = Settings.disqus_shortname; // required: replace example with your forum shortname
+                        var disqus_identifier = '{{post.id}}'; // make sure to use the post.id as an identifier, otherwise disqus will use the pages url per default, which might be problematic...
+                     
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
                 </section>
                 
             </footer>
     
             {{/post}}
-    
+            
         </article>
         
     </div>

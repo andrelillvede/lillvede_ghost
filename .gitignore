@@ -44,3 +44,7 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
+
+# Site specific files #
+#######################
+assets/js/settings.js
